@@ -146,8 +146,9 @@ void Player::OnCollisionEnter(GameObject* other)
         case Tag::kBossRightHand:
         case Tag::kPawn:
         {
-            if (destroyGameObject) destroyGameObject(GetId());
-            IsFinished = true;
+			// CHEAT KEY
+			//IsFinished = true;
+			//if (destroyGameObject) destroyGameObject(GetId());
         }
         break;
         case Tag::kEnemyBullet:
